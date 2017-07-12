@@ -1,0 +1,5 @@
+﻿{
+"path": "D:/minecraft_server/minecraft_server.jar",
+"args": "java -Xmx1024M -jar"
+}
+ 
