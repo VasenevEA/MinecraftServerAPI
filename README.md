@@ -27,3 +27,6 @@ All you need -> send HTTP POST request.
 1. Download /example/[server](https://github.com/VasenevEA/MinecraftServerAPI/tree/master/example/python-client) 
 2. Check exist Python3
 3. Run test.py (check destination url ;-)
+
+![alt text](https://github.com/VasenevEA/MinecraftServerAPI/blob/master/example/train.gif)
+![alt text](https://github.com/VasenevEA/MinecraftServerAPI/blob/master/example/walls.gif)
