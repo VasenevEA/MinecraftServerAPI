@@ -21,7 +21,7 @@ And MinecraftServerAPI redirect this command to server inputStream
 Try to send HTTP POST with body: {"command": "/setblock 0 0 0 stone"} to url/setcommand
 
 ## Why?
-You can write scripts for creating some structures. Python, c#, js... nothing matters what use.
+You can write scripts for creating some structures. Python, c#, js... no matters what use.
 All you need -> send HTTP POST request.
 
 1. Download /example/python-client/[test.py](https://github.com/VasenevEA/MinecraftServerAPI/tree/master/example/python-client/test.py) 
