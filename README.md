@@ -15,10 +15,10 @@ And MinecraftServerAPI redirect this command to server inputStream
 
 1. Download /example/[server](https://github.com/VasenevEA/MinecraftServerAPI/tree/master/example/server) 
 2. Edit server.properties (write your ip and port );
-3. Edit config.txt -> "url": "http://localhost:81" (you will send HTTP POST command to this port)
+3. Edit config.txt -> "url": "http://localhost:81" (you will send HTTP POST command to this url)
 4. Run as admin MinecraftServerApi.exe
 
-Try to send HTTP POST with body: {"command": "/setblock 0 0 0 stone"} to yourURL/setcommand
+Try to send HTTP POST with body: {"command": "/setblock 0 0 0 stone"} to url/setcommand
 
 ## Why?
 You can write scripts for creating some structures. Python, c#, js... nothing matters what use.
