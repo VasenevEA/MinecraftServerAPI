@@ -13,6 +13,7 @@ namespace MinecraftServerAPI
     public class WebApi : NancyModule
     {
         private static Task serverTask;
+
         public WebApi()
         {
             Post["/setCommand", true] = async (ctx, ct) =>

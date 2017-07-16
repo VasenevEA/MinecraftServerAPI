@@ -18,18 +18,15 @@ namespace MinecraftServerAPI
         {
             var conf = loadConfig("config.txt");
 
-            MCserver = startMinecraftServer(conf.path, conf.args);
+            MCserver = getMinecraftServer(conf.path, conf.args);
             MCserver.Start();
-
-            
 
             //start web server
             WebApi.start(conf.url);
 
-
             var readStream = MCserver.StandardOutput;
-           // writer(MCserver.StandardInput);
 
+            //redirect output to Console
             while (true)
             {
                 string line = readStream.ReadLine();
@@ -43,25 +40,8 @@ namespace MinecraftServerAPI
             }
         }
 
-        static void writer(StreamWriter inputStream)
-        {
-            Task.Factory.StartNew(async () =>
-            {
-                int i = 0;
-                while (true)
-                {
-                    inputStream.WriteLine("/setblock " + i +  " 80 0 stone");
 
-                    i++;
-                    //inputStream.WriteLine(Console.ReadLine());
-                    await Task.Delay(100);
-                }
-            });
-        }
-
-
-
-        private static Process startMinecraftServer(string path, string args)
+        private static Process getMinecraftServer(string path, string args)
         {
             var proc = new Process
             {
