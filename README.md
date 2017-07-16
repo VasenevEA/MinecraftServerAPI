@@ -18,7 +18,7 @@ And MinecraftServerAPI redirect this command to server inputStream
 3. Edit config.txt -> "url": "http://localhost:81" (you will send HTTP POST command to this port)
 4. Run as admin MinecraftServerApi.exe
 
-Try to send HTTP POST with body: {"command": "/setblock 0 0 0 stone"} 
+Try to send HTTP POST with body: {"command": "/setblock 0 0 0 stone"} to yourURL/setcommand
 
 ## Why?
 You can write scripts for creating some structures. Python, c#, js... nothing matters what use.
