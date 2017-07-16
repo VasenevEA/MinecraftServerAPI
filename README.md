@@ -24,7 +24,7 @@ Try to send HTTP POST with body: {"command": "/setblock 0 0 0 stone"}
 You can write scripts for creating some structures. Python, c#, js... nothing matters what use.
 All you need -> send HTTP POST request.
 
-1. Download /example/[server](https://github.com/VasenevEA/MinecraftServerAPI/tree/master/example/python-client) 
+1. Download /example/python-client/[test.py](https://github.com/VasenevEA/MinecraftServerAPI/tree/master/example/python-client/test.py) 
 2. Check exist Python3
 3. Run test.py (check destination url ;-)
 
